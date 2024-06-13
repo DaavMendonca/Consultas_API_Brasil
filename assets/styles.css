@@ -1,0 +1,299 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ body {
+    overflow-x: hidden;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #164a7a;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #ffffff;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    color: #ffffff;
+    background: none;
+}
+
+ul.rodape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #ffffff;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+#fcnpj {
+    width: 90%;
+    /* Defina a largura desejada */
+    margin: 0 auto;
+    /* Centralize o formulário na página */
+}
+
+#fcep {
+    width: 90%;
+    /* Defina a largura desejada */
+    margin: 0 auto;
+    /* Centralize o formulário na página */
+}
+
+
+/* Consulta CNPJ */
+.search {
+    padding-left: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+    background-color: #4e99e9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: blue;
+
+}
+
+#estadoContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.option-button {
+    margin-left: 10px;
+}
+
+#consultamun,
+#consultancm {
+    font-size: 12px;
+    padding: 0.4em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#consultamun:hover,
+#consultancm:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(30, 144, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+#consultamun:active,
+#consultancm:active {
+    transform: translate(0em, 0.2em);
+}
+
+
+/* Tabela Municipio - NCM */
+#municipios,
+#tabelancm,
+#tabelabanco,
+#tabelataxas {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#municipios tr,
+#tabelancm tr,
+#tabelabanco tr {
+    height: 10px;
+}
+
+#municipios td,
+#tabelancm td,
+#tabelabanco td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 1px;
+}
+
+#municipios tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#tabelabanco tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#tabelancm tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#municipios tr:hover {
+    background-color: #ddd;
+}
+
+#tabelancm tr:hover {
+    background-color: #ddd;
+}
+
+#tabelabanco tr:hover {
+    background-color: #ddd;
+}
+
+#municipios th,
+#tabelancm th,
+#tabelabanco th,
+#tabelataxas th {
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: dodgerblue;
+    color: white;
+}
+
+#municipios th,
+#tabelancm th,
+#tabelabanco th,
+#tabelataxas th {
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}

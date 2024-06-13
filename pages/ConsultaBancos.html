@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel=stylesheet href='../assets/styles.css'>
+    <script src="../assets/scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Consulta</title>
+</head>
+
+<body onload="listarbancos()">
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="Home.html">
+                        Central de Consulta
+                    </a>
+                </li>
+                <li>
+                    <a href="ConsultaCNPJ.html">Consultar CNPJ</a>
+                </li>
+                <li>
+                    <a href="ConsultaCEP.html">Consulta CEP</a>
+                </li>
+                <li>
+                    <a href="ConsultaIBGE.html">Consulta IBGE</a>
+                </li>
+                <li>
+                    <a href="ConsultaNCM.html">Consulta NCM</a>
+                </li>
+                <li>
+                    <a href="ConsultaBancos.html"><b>Consulta Bancos</b></a>
+                </li>
+                <li>
+                    <a href="ConsultaTaxas.html">Consulta Taxas</a>
+                </li>
+                <li>
+                    <a href="Documentação.html">Documentação</a>
+                </li>
+            </ul>
+            <ul class="rodape">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>
+                    <a class="links" href="https://www.linkedin.com/in/david-silva-m/">David Silva</a>
+                </span>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container"><br>
+                            <p>Consultar Bancos</p>
+                            <div id="pesquisar" class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text">Nome</span>
+                                            <input onkeyup="filtrarbanco()" type="text" id="banco" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <table id="tabelabanco">
+                                <tr>
+                                    <th style="width: 15%;">ISPB</th>
+                                    <th style="width: 50%;">Nome</th>
+                                    <th style="width: 15%;">Codigo</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+
+
+</script>
+
+</html>
